@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ExecConnect - verified networking for leaders</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js" defer></script>
+</head>
+<body>
+  <header class="topbar" id="topbar" hidden>
+    <div class="brand"><span class="logo">EC</span> ExecConnect</div>
+    <nav id="nav">
+      <a href="#discover" data-view="discover">Discover</a>
+      <a href="#connections" data-view="connections">Connections <span class="badge" id="req-badge" hidden></span></a>
+      <a href="#profile" data-view="profile">Profile</a>
+      <a href="#admin" data-view="admin" id="nav-admin" hidden>Admin</a>
+    </nav>
+    <div class="me"><span id="me-alias"></span><button class="link" id="logout">Log out</button></div>
+  </header>
+
+  <main id="app"></main>
+  <div id="toast" class="toast" hidden></div>
+  <div id="modal" class="modal" hidden><div class="modal-card" id="modal-card"></div></div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
